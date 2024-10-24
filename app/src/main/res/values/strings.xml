@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SearchPart</string>
+    <string name="search_email">Search in mail</string>
+    <string name="profile">Profile</string>
+</resources>

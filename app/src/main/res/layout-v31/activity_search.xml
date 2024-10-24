@@ -1,0 +1,70 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_toolbar_background"
+            android:padding="8dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginBottom="11dp"
+            android:elevation="10dp"
+
+            >
+
+            <!-- Hamburger icon -->
+            <ImageButton
+                android:id="@+id/hamburger_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:paddingEnd="8dp"
+                android:src="@drawable/ic_menu" />
+
+            <!-- Search EditText -->
+            <EditText
+                android:id="@+id/editTextSearch"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="10dp"
+                android:hint="@string/search_email"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColorHint="@color/gray"
+                />
+
+            <!-- Avatar Icon -->
+            <ImageButton
+                android:id="@+id/avatar_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/circular_background"
+                android:contentDescription="@string/profile"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chamber"
+                android:clipToOutline="true" />
+            
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:padding="16dp"
+        android:scrollbars="vertical"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
